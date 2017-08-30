@@ -17,6 +17,7 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'cloudinary'
 
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
