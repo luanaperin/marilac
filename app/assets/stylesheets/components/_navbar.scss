@@ -14,14 +14,36 @@
   width: 100%;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, $gray 0%, $light-gray 70%);
+  background: linear-gradient(135deg, $red 40%, #8B4513 100%);
   justify-content: space-between;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover{
+    font-size: 25px;  }
+
+}
+
+.nav-index-compress {
+  color: white;
+  padding: 0 60px;
+  width: 100%;
+  background: linear-gradient(135deg, $red 40%, #8B4513 100%);
 
 }
 
 /* Logo */
 .navbar-marilac-brand img {
   height: 200px;
+  border: solid 1px $light-gray;
+  box-shadow: 5px 5px 15px rgba(68,68,68,0.8);
+  margin-left: 30px;
+}
+
+.navbar-marilac-minibrand img {
+  height: 100px;
   border: solid 1px $light-gray;
   box-shadow: 5px 5px 15px rgba(68,68,68,0.8);
   margin-left: 30px;
@@ -37,18 +59,11 @@
 }
 
 /* Basic navbar item */
-.navbar-wagon-item {
+.navbar-marilac-item {
   cursor: pointer;
   padding: 0 20px;
+
 }
 
-/* Navbar link */
-.navbar-wagon-link {
-  color: #616668;
-  font-size: 14px;
-}
-.navbar-wagon-link:hover {
-  color: #da552f;
-  text-decoration: none;
-}
+
 
