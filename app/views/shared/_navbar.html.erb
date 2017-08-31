@@ -1,19 +1,48 @@
 <div class="navbar-marilac">
-  <div class="navbar-marilac-brand">
+  <div class="navbar-marilac-brand hidden-xs hidden-sm">
     <%= cl_image_tag("Logo_Marilac_1_1_m0qbgh.jpg") %>
   </div>
-  <div class="nav-index hide-md">
+  <div class="navbar-marilac-minibrand hidden-md hidden-lg">
+    <%= cl_image_tag("Logo_Marilac_1_1_m0qbgh.jpg") %>
+  </div>
+  <div class="nav-index hidden-xs hidden-sm">
     <h4>
-      Quem somos
+    <%= link_to "Quem somos", "#{root_path}#historia"  %>
     </h4>
     <h4>
-      Produtos
+      <%= link_to "Produtos", "#{root_path}#produtos"  %>
     </h4>
     <h4>
+      <% link_to "Social", "#{root_path}#social"  %>
       Social
     </h4>
     <h4>
+      <% link_to "Contato", "#{root_path}#contato"  %>
       Contato
     </h4>
+  </div>
+  <div class="nav-index-compress hidden-md hidden-lg">
+  <!-- Dropdown list appearing on mobile only -->
+    <div class="navbar-marilac-item hidden-md hidden-lg">
+      <div class="dropdown">
+        <i class="fa fa-indent dropdown-toggle" data-toggle="dropdown"></i>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li>
+            <%= link_to "Quem somos", "#{root_path}#historia"  %>
+          </li>
+          <li>
+            <%= link_to "Produtos", "#{root_path}#produtos"  %>
+          </li>
+          <li>
+            <% link_to "Social", "#{root_path}#social"  %>
+            Social
+          </li>
+          <li>
+            <% link_to "Contato", "#{root_path}#contato"  %>
+            Contato
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
