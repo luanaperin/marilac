@@ -2,10 +2,9 @@
 <!-- BANNER DE APRESENTAÇÃO
  -->
 
-<div class="banner image-banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.1) 0%, rgba(0,36,61,0.1) 50%), url('http://res.cloudinary.com/camilla-azambuja/image/upload/e_grayscale/v1504135648/vaca_cgow6n.jpg');">
+<div class="banner image-banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.1) 0%, rgba(0,36,61,0.1) 50%), url('http://res.cloudinary.com/camilla-azambuja/image/upload/v1504135648/vaca_cgow6n.jpg');">
   <div class="banner-content">
     <h1>Laticínios Marilac</h1>
-    <p>Há mais de 20 anos no mercado atendendo com carinho a família Mato-Grossense.</p>
   </div>
 </div>
 
@@ -15,51 +14,7 @@
 
  <!-- CONTAINER SOBRE A EMPRESA
  -->
-
-<div class="container">
-  <div class="row">
-      <h3 id="historia">Nossa história</h3>
-    <div class="col-xs-12 col-md-6 image-history">
-      <%= cl_image_tag("marilac_qx4amy.jpg",:height=>350, :width=>500, :crop=>"scale")%>
-    </div>
-
-    <div class="content-about">
-      <div class="col-xs-12 col-md-6 content-history block-first">
-
-        <div class="history">
-          <p align="justify" > Em 1993 Marcio e Marly se mudaram para Nova Marilândia com suas 03 filhas, onde montaram uma pequena fábrica, iniciando com a fabricação de apenas 02 (duas) barras de queijo muçarela por dia. </p>
-        </div>
-        <div class="history">
-          <p align="justify" > Com muitas dificuldades foram aumentando sua produção, utilizavam sua Belina velha para o recolhimento do leite in natura, fabricação dos produtos lácteos e comercialização. </p>
-        </div>
-        <div class="history">
-          <p align="justify" > Com o passar dos anos e com a Benção de Deus,<strong> a Industria de Laticínios Marilac foi gerando empregos na região</strong>, incentivando produtores rurais locais e cidades vizinhas na produção de leite. </p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-md-6 content-history block-second">
-      <div class="history">
-      <br>
-        <p align="justify" > Uma vida simples e de muito trabalho, hoje a Marilac Laticínios produz <strong>queijos de altíssima qualidade</strong> onde os produtos são fabricados com <strong>leites de qualidade</strong> garantida através da parceria com os produtores da região que eleva a cada dia mais os padrões de qualidade dos produtos Marilac. E recentemente através da Estancia Marilac <strong>iniciou-se a criação de bubalinos e produção de queijos de búfalas.</strong> </p>
-      </div>
-      <div class="history">
-        <p align="justify" > Hoje a Marilac Laticínios está há mais de 20 anos no mercado atendendo a família Mato-Grossense e continua crescendo e <strong> buscando continuamente a eficiência na produção e a confiança do consumidor.</strong> </p>
-      </div>
-    </div>
-
-    <div class="col-xs-12 col-md-6 image-history">
-      <%= cl_image_tag("minas_skalws.jpg",:height=>350, :width=>500, :crop=>"scale")%>
-    </div>
-  </div>
-</div>
-</div>
+ <%= render "shared/historia" %>
 
 
 <!-- CONTAINER PRODUTOS
@@ -69,9 +24,9 @@
 <!-- FIM DO CONTAINER PRODUTOS
  -->
 
-
+<div id="social">
 <div class="container">
-  <h3 id="social">Dia das crianças com Marilac</h3>
+  <h3 >Dia das crianças com Marilac</h3>
   <div class="col-xs-12 col-md-6">
     <div class="content-history">
       <div class="history">
@@ -86,19 +41,45 @@
     <%= cl_image_tag("1504138538844033_xetawh.jpg", :height=>400, :width=>500, :crop=>"scale")%>
   </div>
 </div>
+</div>
 
-<div class="container">
-  <div id="contact">
-    <div class="col-xs-12 col-md-6">
-      <form action="https://formspree.io/marilaclaticinios@gmail.com"
-      method="POST">
-        <input type="text" name="name" placeholder="Deixe a sua mensagem">
+<div id="contact">
+  <div class="contact-content">
+  <h2>Fale conosco</h2>
+    <form id="email_form"  action="https://formspree.io/luanakperin@gmail.com"
+    method="POST">
+      <div class="row">
+        <input type="text" name="name" placeholder="Nome" >
         <input type="email" name="_replyto" placeholder="Qual o seu e-mail?">
+      </div>
+      <div class="row">
+        <input id="email_sms" type="text" name="message" placeholder="Deixe a sua mensagem">
+      </div>
+      <div class="row">
         <input type="submit" value="Send" btn btn-danger>
-      </form>
+      </div>
+
+    </form>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      Tel: 065- 3352 1128
+
+      Endereço: Rua das Dalias 551w
+
+      Nova Marilândia - MT 78415000
+
+﻿      Email: marilaclaticinios@gmail.com
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <iframe width="100%" height="450" frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?q=Rua+das+Dalias+-+Planalto,+Nova+Marilândia+-+MT,+78415-000&key=AIzaSyCCd1SNXeM35B2QhgAUygZvq3j1erJYkIA" >
+      </iframe>
     </div>
   </div>
+
 </div>
+
 
 
 

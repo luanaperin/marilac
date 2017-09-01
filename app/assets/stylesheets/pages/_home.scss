@@ -8,10 +8,12 @@
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  background-size: cover;
+  width: 100%;
   margin-top: -110px;
+  position: fixed;
+  z-index: -1;
 }
 
 .image-banner-products {
@@ -46,6 +48,28 @@
 }
 // FIM DO CSS BANNER
 
+
+
+#historia {
+  z-index: 50;
+  margin-top: 100vh;
+  background-color: white;
+}
+
+.historia-white {
+  background-color: white;
+}
+.historia-blue {
+  background-color: $blue;
+  padding: 15px;
+  color: white;
+}
+
+#social {
+  background-color: white;
+  z-index: 50;
+}
+
 .history {
   text-indent: 50px;
 }
@@ -54,16 +78,19 @@
   font-size: 13px;
 }
 
-.block-second {
-  background-color: white;
-
+.historia-title {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.block-first {
-  background-color: white;
 
+
+products-cards {
+  text-align: center;
 }
 
+
+// CARDS DE PRODUTOS
 
 .card {
   height: 175px;
@@ -76,41 +103,81 @@
   border-radius: 10px;
 
 }
-.card-user {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 40px;
-  border-radius: 50%;
+
+.card:hover .card-description {
+  width: 100%;
 }
-.card-category {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 15px;
-  text-transform: uppercase;
-}
+
+
+
 .card-description {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
+  background-color: rgba(146,96,91,0.8);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  white-space: nowrap;
 }
 .card-description h2 {
   font-size: 24px;
 }
 .card-description p {
   font-size: 14px;
-  opacity: 0.7;
   font-weight: lighter;
 }
-.card-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
+
+// FORMULARIO DE EMAIL
+
+#contact {
   width: 100%;
-  z-index: 2;
-  background: black;
-  opacity: 0;
+  height: auto;
+  text-align: center;
+  background-color: #A20026;
+  padding: 30px;
+  color: white;
+
+}
+
+.contact-content {
+  margin-bottom: 60px;
+}
+
+#email_form {
+  margin-top: 30px;
+}
+
+#email_sms {
+  width: 80%;
+}
+
+
+
+input {
+    padding:5px;
+    background-color: #A20026;
+    color: white;
+    outline: 0;
+    border-width: 0 0 2px 0;
+    border-color: white;
+    margin: 25px;
+    text-align: center;
+    word-break: break-word;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: black;
+  transition: all 0.3s ease;
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    background: $gray;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5)
 }
 
