@@ -58,7 +58,7 @@
 
 .historia-white {
   background-color: white;
-  padding: 15px;
+  padding: 25px;
 }
 .historia-blue {
   background-color: #992F36;
@@ -78,7 +78,7 @@
 
 .history-final {
   font-size: 25px;
-  margin: 30px 0;
+  margin: 60px 0;
   p {
     text-align: center;
   }
@@ -318,13 +318,57 @@ input[type=submit] {
   -o-transform:rotate(6deg);
   -moz-transform:rotate(6deg);
   transition: all .2s ease-in-out;
+  height: 10em;
+  width: 16em;
+  background-size:100%;
+  /* Firefox */
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
 }
 
 .social-photos:hover {
-
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
   -o-transform: scale(1.25);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  position:relative;
+  z-index:5;
+}
+
+#produtos-title {
+  margin-top: 60px;
+  margin-bottom: 45px;
+}
+
+.photo-middle {
+  -webkit-transform:rotate(6deg);
+  -o-transform:rotate(6deg);
+  -moz-transform:rotate(6deg);
+  transition: all .2s ease-in-out;
+  height: 16em;
+  width: 16em;
+  background-size:100%;
+  /* Firefox */
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+
+}
+
+.photo-middle:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
   position:relative;
   z-index:5;
 }
@@ -336,6 +380,7 @@ input[type=submit] {
   color: black;
   text-align: center;
   margin-bottom: 60px;
+  margin-top: 35px;
   }
 }
 
@@ -343,10 +388,14 @@ input[type=submit] {
   padding: 40px 0;
 }
 
-.color-social {
+#color-social {
   background: white;
 }
 
 .mapa-position {
 margin-top: 151px;
+}
+
+#produtos {
+  padding-bottom: 40px;
 }
