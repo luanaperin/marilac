@@ -64,7 +64,6 @@
 
 }
 
-
 .card {
   height: 175px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
@@ -114,3 +113,129 @@
   opacity: 0;
 }
 
+// CSS DA HISTORIA
+
+
+
+
+.history-card {
+
+  text-decoration: none;
+  color: #000;
+  height: 16em;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 16em;
+  font-family: 'Reenie Beanie', cursive;
+
+
+  padding:1em;
+  /* Firefox */
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  h4 {
+    font-size: 23px;
+    text-indent: 50px;
+    font-family: 'Reenie Beanie', cursive;
+  }
+}
+
+
+
+.history-card:hover {
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
+.history-card {
+  h3 {
+    margin-bottom: 10px;
+
+  }
+}
+
+
+
+.color-one {
+  background: aquamarine;
+  -webkit-transform:rotate(-6deg);
+  -o-transform:rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+
+.color-two {
+  background: lightsalmon;
+  -webkit-transform:rotate(6deg);
+  -o-transform:rotate(6deg);
+  -moz-transform:rotate(6deg);
+}
+
+.color-three {
+  background: bisque;
+  -webkit-transform:rotate(-6deg);
+  -o-transform:rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+
+.color-four {
+  background: lightpink;
+  -webkit-transform:rotate(6deg);
+  -o-transform:rotate(6deg);
+  -moz-transform:rotate(6deg);
+}
+
+.color-five {
+  background: salmon;
+  -webkit-transform:rotate(-8deg);
+  -o-transform:rotate(-8deg);
+  -moz-transform:rotate(-8deg);
+}
+
+.color-six {
+  background: burlywood;
+  -webkit-transform:rotate(6deg);
+  -o-transform:rotate(6deg);
+  -moz-transform:rotate(6deg);
+}
+// FIM DO CSS DA HISTORIA
+
+
+.social-photos {
+  -webkit-transform:rotate(6deg);
+  -o-transform:rotate(6deg);
+  -moz-transform:rotate(6deg);
+
+}
+
+.social-photos:hover {
+
+
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
+.text-history {
+  h2 {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  margin-bottom: 60px;
+  }
+}
+
+.box-social {
+  padding: 40px 0;
+}
